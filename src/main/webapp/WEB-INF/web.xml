@@ -1,0 +1,28 @@
+<web-app>
+  <servlet>
+    <servlet-name>custom-servlet-demo</servlet-name>
+    <servlet-class>hsca.servlet.ServletInterfaceImplDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>custom-servlet-demo</servlet-name>
+    <url-pattern>/custom/say-hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>generic-servlet-demo</servlet-name>
+    <servlet-class>hsca.servlet.GenericServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>generic-servlet-demo</servlet-name>
+    <url-pattern>/generic/say-hello</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>http-servlet-demo</servlet-name>
+    <servlet-class>hsca.servlet.HttpServletDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>http-servlet-demo</servlet-name>
+    <url-pattern>/http/say-hello</url-pattern>
+  </servlet-mapping>
+</web-app>
